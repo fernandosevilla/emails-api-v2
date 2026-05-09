@@ -148,7 +148,7 @@ public class EmailMessage {
     public void markAsFailed(String reason) {
         this.status = EmailStatus.FAILED;
         this.failedAt = Instant.now();
-        this.failureReason = reason;
+        this.failureReason = validateRequiredText(reason, "Failure reason");
     }
 
     /**
