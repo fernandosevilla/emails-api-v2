@@ -40,7 +40,7 @@ Objetivo 4  — Puertos de salida                      Hecho
 Objetivo 5  — Adaptadores fake                       Hecho
 Objetivo 6  — Adaptador REST                         Hecho
 Objetivo 7  — Persistencia real con PostgreSQL/JPA   Hecho
-Objetivo 7.5 — README del proyecto                   Pendiente
+Objetivo 7.5 — README del proyecto                   Hecho
 Objetivo 8  — Consultar emails                       Pendiente
 Objetivo 9  — Envío real por SMTP                    Pendiente
 Objetivo 10 — Tracking de aperturas                  Pendiente
@@ -526,7 +526,7 @@ Este objetivo se adelanta porque el proyecto ya tiene suficiente base como para 
 ## Estado
 
 ```text
-Pendiente
+Hecho
 ```
 
 ---
