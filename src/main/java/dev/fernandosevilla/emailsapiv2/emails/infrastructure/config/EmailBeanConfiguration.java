@@ -5,7 +5,6 @@ import dev.fernandosevilla.emailsapiv2.emails.application.port.out.EmailMessageR
 import dev.fernandosevilla.emailsapiv2.emails.application.port.out.EmailSenderPort;
 import dev.fernandosevilla.emailsapiv2.emails.application.service.SendEmailService;
 import dev.fernandosevilla.emailsapiv2.emails.infrastructure.mail.fake.FakeEmailSenderAdapter;
-import dev.fernandosevilla.emailsapiv2.emails.infrastructure.persistence.inmemory.InMemoryEmailMessageRepositoryAdapter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -19,20 +18,6 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class EmailBeanConfiguration {
-    /**
-     * Crea el adpaptador de persistencia de emails.
-     *
-     * <p>
-     *     Para desarrollo y pruebas de momento lo dejo en memoria.
-     * </p>
-     *
-     * @return implementación del puerto de persistencia de mensajes de email
-     */
-    @Bean
-    public EmailMessageRepositoryPort emailMessageRepositoryPort() {
-        return new InMemoryEmailMessageRepositoryAdapter();
-    }
-
     /**
      * Crea el adaptador de envío de emails.
      *
